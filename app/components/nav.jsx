@@ -17,18 +17,18 @@ const Nav = () => {
     <>
       <div className="flex lg:blok justify-between items-center w-full h-16 gap-5 ">
         {/* Logo */}
-        <div>
-          <Image src="" alt="" width={10} height={10} />
+        <div className="rounded-full">
+          <Image className="w-10 h-8" src="/Group 11.png" alt="" width={1000} height={1000} />
         </div>
         {/* Liens */}
-        <nav className=" text-black lg:flex items-center  hidden md:hidden">
+        <nav className=" text-white lg:flex items-center  hidden md:hidden">
           {/* Desktop */}
           <ul className="flex gap-10">
             <Link href="">
               <li>Accueil</li>
             </Link>
             <Link href="">
-              <li>Liste dévènement</li>
+              <li>Liste d`évènements</li>
             </Link>
             <Link href="">
               <li>Créer un évènement</li>
@@ -39,10 +39,10 @@ const Nav = () => {
           </ul>
 
           <div className="flex gap-5 items-center ml-16">
-          <button className="w-40 h-10 bg-transparent/5" type="button">
+        <Link href="/formulaire"> <button id="" className="w-40 h-10 bg-transparent/5 rounded-lg hover:bg-white hover:text-black" type="button">
             Inscription
-          </button>
-          <button className="w-40 h-10" type="button">
+          </button></Link> 
+          <button id="" className="w-24 h-8  hover:bg-blue-400 rounded-2xl bg-blue-800" type="button">
             Connexion
           </button>
         </div>
@@ -54,21 +54,21 @@ const Nav = () => {
       <button className="lg:hidden md:block block p-5" onClick={toggleMenu}>
         {" "}
         {menuOpen ? (
-          <FiX className="w-6 h-6" />
+          <FiX className="w-6 h-6 " />
         ) : (
           <FiAlignRight className="w-6 h-6" />
         )}
       </button>
 
       {menuOpen && (
-        <div className=" text-black  flex-col items-center absolute top-[100px] left-0 w-full ">
+        <div className=" text-black  flex-col items-center absolute top-[80px] left-0 w-full ">
           {/* Desktop */}
-          <ul className=" flex gap-10 flex-col md:flex-col place-items-end p-5 ">
+          <ul className=" flex gap-10 flex-col md:flex-col place-items-end p-5 bg-white ">
             <Link href="">
               <li>Accueil</li>
             </Link>
             <Link href="">
-              <li>Liste dévènement</li>
+              <li>Liste dévènements</li>
             </Link>
             <Link href="">
               <li>Créer un évènement</li>

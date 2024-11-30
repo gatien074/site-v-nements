@@ -8,7 +8,7 @@ import Nav from './nav'
 const Header = () => {
   return (
     <>
-       <div className='bg-black/35 w-full h-40 flex justify-center items-center p-5 '>
+       <div className='lg:bg-black bg-transparent/5 w-full h-20 flex justify-center items-center p-5 sticky top-0 '>
         <Nav/>
        </div>
     </>
